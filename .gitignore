@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+backups/*.bin
+backups/*.txt
+!backups/.gitkeep
+.idea/
+.vscode/
+*.egg-info/
