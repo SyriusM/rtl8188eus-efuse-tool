@@ -8,3 +8,4 @@ backups/*.txt
 .idea/
 .vscode/
 *.egg-info/
+ops_log.jsonl
