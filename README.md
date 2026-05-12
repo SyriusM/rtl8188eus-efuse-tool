@@ -197,6 +197,18 @@ Every operation (info/dump/write/verify) appends one JSONL entry to
 
 For forensics: `jq '.' ops_log.jsonl | less`.
 
+## Disclaimer
+
+This tool is intended for **security research, education, and reverse engineering on hardware you own**.
+
+- **No warranty of any kind**, express or implied — see GPL-3.0 sections 15-17.
+- Users are responsible for compliance with **local regulations** (telecommunications law, RF emissions, data protection).
+- The OTP write operations are **physically irreversible** — fuses are blown one-way at the silicon level. Test on chips you accept losing.
+- Do not use against hardware you do not own or have explicit authorization to test.
+- The author bears no responsibility for misuse, hardware damage, regulatory violations, or data loss arising from use of this software.
+
+The legitimate primary use cases are: learning how EFuse OTP semantics work, reproducible reverse engineering of vendor protocols, contributing to FOSS understanding of Realtek hardware, and recovering or characterizing chips you own. The tool deliberately includes safety-by-design features (auto-backup, audit log, sanity checks, byte+logical verify) reflecting these intended use cases.
+
 ## License
 
 GPL-3.0 (zgodnie z source 8188eu z którego pochodzi RE)
